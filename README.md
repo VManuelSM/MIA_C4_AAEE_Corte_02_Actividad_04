@@ -42,7 +42,7 @@ Cuatro instancias de evaluación (12 y 36 productos, con sustitución débil y f
 | E36-F | 8.62 % | 1.86 % | M16+M20 (0.331 %) | 0.331 % | M14+M18 (1.408 %) |
 
 - **La mutación pesa más que la recombinación.** M18, que reinicia el precio en todo su intervalo, es la peor mutación en las cuatro instancias. Sus configuraciones capturan entre el 82 % y el 94 % de la mejora posible; las de M19 y M20, entre el 91 % y el 99 %.
-- **La mejor recombinación depende del problema.** Con sustitución débil gana o empata M14. En la instancia grande con sustitución fuerte gana sola M16. M15 genera hijos factibles casi siempre, porque el conjunto factible es convexo, pero contrae la población y nunca entra al grupo superior.
+- **La mejor recombinación depende del problema.** En tres de las cuatro instancias M14 gana o empata con la mejor. En la instancia grande con sustitución fuerte gana sola M16. M15 genera hijos factibles casi siempre, porque el conjunto factible es convexo, pero contrae la población y nunca entra al grupo superior.
 - **Elección final.** Cuatro configuraciones no difieren entre sí en el ranking global de 120 bloques (Friedman y prueba posterior de Demšar con Holm). La regla fijada de antemano elige la de menor brecha máxima: **M16+M20 con α = 0.3 y η = 20**, cuya peor corrida queda a 0.575 % del óptimo.
 - **Líneas base.** La búsqueda aleatoria con el mismo presupuesto no encuentra ninguna solución factible con 36 productos, y con 12 queda a 7–8 % del óptimo. Subir todos los precios 3 % recupera entre el 28 % y el 77 % de la mejora.
 
