@@ -1,0 +1,192 @@
+{
+  "actividad": "AAEE · Actividad 04 · corte 2",
+  "entorno": {
+    "python": "3.11.16",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2",
+    "plataforma": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "etapas_fijas": {
+    "1": "M03",
+    "2": "M08",
+    "3": "M12 (k = 2)",
+    "6": "M22 (e = 2)",
+    "7": "M26 (E_max = 20000)"
+  },
+  "comparadas": {
+    "4": [
+      "M14",
+      "M15",
+      "M16"
+    ],
+    "5": [
+      "M18",
+      "M19",
+      "M20"
+    ]
+  },
+  "comunes": {
+    "N": 100,
+    "k": 2,
+    "e": 2,
+    "pc": 0.9,
+    "pm": "1/d",
+    "E_max": 20000,
+    "evaluaciones": 19994
+  },
+  "rejilla_calibracion": {
+    "alfa": [
+      0.1,
+      0.3,
+      0.5
+    ],
+    "sigma": [
+      0.02,
+      0.05,
+      0.1
+    ],
+    "eta": [
+      5,
+      20,
+      50
+    ]
+  },
+  "parametros_calibrados": {
+    "M14+M18": {},
+    "M14+M19": {
+      "sigma": 0.05
+    },
+    "M14+M20": {
+      "eta": 20
+    },
+    "M15+M18": {},
+    "M15+M19": {
+      "sigma": 0.1
+    },
+    "M15+M20": {
+      "eta": 20
+    },
+    "M16+M18": {
+      "alfa": 0.3
+    },
+    "M16+M19": {
+      "alfa": 0.3,
+      "sigma": 0.05
+    },
+    "M16+M20": {
+      "alfa": 0.3,
+      "eta": 20
+    }
+  },
+  "semillas_calibracion": [
+    20261200,
+    20261201,
+    20261202,
+    20261203,
+    20261204,
+    20261205,
+    20261206,
+    20261207,
+    20261208,
+    20261209
+  ],
+  "semillas_evaluacion": [
+    20261017,
+    20261018,
+    20261019,
+    20261020,
+    20261021,
+    20261022,
+    20261023,
+    20261024,
+    20261025,
+    20261026,
+    20261027,
+    20261028,
+    20261029,
+    20261030,
+    20261031,
+    20261032,
+    20261033,
+    20261034,
+    20261035,
+    20261036,
+    20261037,
+    20261038,
+    20261039,
+    20261040,
+    20261041,
+    20261042,
+    20261043,
+    20261044,
+    20261045,
+    20261046
+  ],
+  "instancias": {
+    "C24-F": {
+      "n_familias": 8,
+      "intensidad": "F",
+      "semilla": 20261090,
+      "uso": "calibración"
+    },
+    "E12-D": {
+      "n_familias": 4,
+      "intensidad": "D",
+      "semilla": 20261091,
+      "uso": "evaluación"
+    },
+    "E12-F": {
+      "n_familias": 4,
+      "intensidad": "F",
+      "semilla": 20261092,
+      "uso": "evaluación y caso principal"
+    },
+    "E36-D": {
+      "n_familias": 12,
+      "intensidad": "D",
+      "semilla": 20261093,
+      "uso": "evaluación"
+    },
+    "E36-F": {
+      "n_familias": 12,
+      "intensidad": "F",
+      "semilla": 20261094,
+      "uso": "evaluación"
+    }
+  },
+  "optimos": {
+    "C24-F": 180311.7127821809,
+    "E12-D": 66004.59475712021,
+    "E12-F": 60316.3008597873,
+    "E36-D": 193209.65215723193,
+    "E36-F": 257433.27700532865
+  },
+  "elegida": "M16+M20",
+  "pruebas": 16,
+  "segundos_totales": 33.00935104198288,
+  "archivos": {
+    "figuras/ae_a04_01_diseno_factorial.png": "7e328b0c133f6b1cb5328a5bea39e4c5db04730f40cba79b4fd351f56c710ac7",
+    "figuras/ae_a04_02_operadores.png": "55aa390818eea6c80fd759bc5c4bdbb040cd660b8be11aa91f49b02cfc715593",
+    "figuras/ae_a04_03_calibracion.png": "04a6d1d85dc12d7c6f0c7b4409c0a8d27ea43a98e8ff006525d614b887e9c6a0",
+    "figuras/ae_a04_04_brechas_3x3.png": "42bf0b6ce32f6399549ff98431ee1a937dbf1325f0a020ecb03ef4d45fa7fd1c",
+    "figuras/ae_a04_05_interaccion.png": "48686714352493335e79f58492f9272f73c9f612baf7ec2b55d559424118321a",
+    "figuras/ae_a04_06_convergencia.png": "a98212006f81e2bb6ef539afa72f6fb76cc872438acc5e9e270f11e57c84833a",
+    "figuras/ae_a04_07_mecanismo.png": "c80814bc2fc126b563c194bd34fd5bd92036456fea6d9ab81f18e1a0b35d31f0",
+    "figuras/ae_a04_08_caso_principal.png": "a5ee219a77aa590aab16134e4952000b9983773f0fa859ffba940893099794f3",
+    "resultados/busqueda_aleatoria.csv": "47962dfd53d201a2150b21a89027ee8d3fdf94e9f1e466c0d6a8d380e73d6ffe",
+    "resultados/calibracion.csv": "9bca294042ea1e05c46191d02edbda1fd9cc2c4e41666ffc28453b7bcb450bc0",
+    "resultados/calibracion_elegidos.csv": "bbf5c28ea07be55fcd001988d679ba37b8be7b7a809726b6411c8366753dced8",
+    "resultados/caso_principal_alternativas.csv": "012368f999c82b40e1785faad2a56d73ea805f763d72186a0ec1a8d61e649fcc",
+    "resultados/caso_principal_productos.csv": "ed692825d9b2730f3347aa74c26c82a055c4eb78e0030a94cb8cc02879740f2e",
+    "resultados/corridas.csv": "5b47aec815db80f7f8a96c931eaa96b8f3bd1691b9b54f548c7e040821239936",
+    "resultados/historial_busqueda_aleatoria.csv": "2d9fa57698b0947277a694f865e948c3eb75f7afe923238f86790262bdbda21b",
+    "resultados/historiales.csv": "5de33072184ae931b06de4138e8cac50a0f7ff557fb280a88a1b5ba8123a50f2",
+    "resultados/instancias.csv": "dc29575ac8fb12aa8235fcabc6db68af327766df9c622fc971790e140247045d",
+    "resultados/mecanismo_medianas.csv": "698fcd6d9bb8ac8372dcc802211ad7ada6e6564f0cf55bf2b134b6c0fae76f16",
+    "resultados/pruebas_estadisticas.csv": "1dc54c5b542872b9f1eb9163de4db70b22463665f94e3f1c5f5225094deba9f7",
+    "resultados/ranking_global.csv": "c489dc944c8c6141b932aa937dd712d1e159544b5c69cf79740f6949a60daa08",
+    "resultados/resumen.csv": "1e3d31a026e1509520d6c97a0ee9aaea74070d45c37096956a47a6913c478531"
+  }
+}
